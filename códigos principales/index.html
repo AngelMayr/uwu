@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Widget | Extensions Demo</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    #flat-chat {
+      height: 98vh;
+      width: 98vw;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+      #flat-chat {
+        height: 98vh;
+        width: 98vw;
+      }
+    }
+    @media (max-width: 480px) {
+      #flat-chat {
+        height: 98vh;
+        width: 98vw;
+      }
+      .chat-message {
+        font-size: 14px;
+        padding: 8px;
+      }
+      .chat-header {
+        font-size: 16px;
+        padding: 10px;
+      }
+      .chat-buttons {
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="flat-chat"></div>
+  <script type="module">
+    import {
+      VideoExtension,
+      TimerExtension,
+      FormExtension,
+      MapExtension,
+      FileUploadExtension,
+      KBUploadExtension,
+      DateExtension,
+      ConfettiExtension,
+      FeedbackExtension,
+    } from 'https://413xkur4y4m1.github.io/pagefunctions/extensions.js';
+
+    (function (d, t) {
+      var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        window.voiceflow.chat.load({
+          verify: { projectID: '66ba3bb762f135f0342126af' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'development',
+          user: {
+            name: 'Demo User',
+          },
+          render: {
+            mode: 'embedded',
+            target: document.getElementById('flat-chat'),
+          },
+          autostart: false,
+          assistant: {
+            title: 'Legal Copilot',
+            stylesheet: 'https://413xkur4y4m1.github.io/pagefunctions/style.css',
+            extensions: [
+              VideoExtension,
+              TimerExtension,
+              FormExtension,
+              MapExtension,
+              FileUploadExtension,
+              KBUploadExtension,
+              DateExtension,
+              FeedbackExtension,
+            ],
+          },
+        }).then(() => {
+          const chatContainer = document.getElementById('flat-chat');
+          const observer = new MutationObserver(() => {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          });
+          observer.observe(chatContainer, { childList: true, subtree: true });
+        });
+      };
+      v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+      v.type = 'text/javascript';
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>
