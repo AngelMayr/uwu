@@ -1,0 +1,43 @@
+/* Definición de variables globales */
+:root {
+    --colors-primary: #3D2264;
+    --colors-darkPrimary: #3D2264;
+    --colors-fadedPrimary: #3D2264;
+    --colors-darkGrey: #333333; /* Ejemplo de color oscuro, asegúrate de definir el valor correcto */
+    --radii-1: 4px; /* Ejemplo de valor, asegúrate de que esté definido */
+    --fonts-default: Arial, sans-serif; /* Ejemplo de fuente, asegúrate de que esté definida */
+    --space-3: 16px; /* Ejemplo de valor, asegúrate de que esté definido */
+}
+
+/* Estilos para la clase t-eTswqK */
+.t-eTswqK {
+    --colors-primary: #3D2264;
+    --colors-darkPrimary: #3D2264;
+    --colors-fadedPrimary: #3D2264;
+}
+
+/* Estilos para la clase c-gMpNkY */
+.c-gMpNkY {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 4px;
+    border-radius: var(--radii-1);
+    font-family: var(--fonts-default);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+}
+
+/* Estilos para la clase c-cejRVw */
+.c-cejRVw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 var(--space-3) 0;
+    font-family: var(--fonts-default);
+    font-size: 0; /* Normalmente se usa para resetear, asegúrate que es intencional */
+    font-weight: 0; /* Normalmente se usa para resetear, asegúrate que es intencional */
+    line-height: 17px;
+    color: var(--colors-darkGrey);
+}

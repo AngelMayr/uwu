@@ -1,0 +1,176 @@
+/* Definición de variables globales */
+:root,
+:host,
+.t-iiWAej {
+    --colors-black: rgba(0, 0, 0, 0.9);
+    --colors-darkGrey: #5a5a5d;
+    --colors-blue: #2b6bc7;
+    --colors-primary: #2b6bc7;
+    --colors-darkPrimary: #1e5096;
+    --colors-fadedPrimary: #3d82e273;
+    --colors-shadow1: #3d82e2;
+    --colors-shadow2: rgba(0, 0, 0, 0.02);
+    --colors-shadow3: rgba(0, 0, 0, 0.03);
+    --colors-shadow4: rgba(0, 0, 0, 0.04);
+    --colors-shadow6: rgba(0, 0, 0, 0.06);
+    --colors-shadow8: rgba(0, 0, 0, 0.08);
+    --colors-shadow12: rgba(0, 0, 0, 0.12);
+    --colors-shadow16: rgba(0, 0, 0, 0.16);
+    --colors-surfaceZ1Light: 0px 1px 3px 1px rgba(22, 26, 30, 0.01), 0px 4px 8px -6px rgba(22, 26, 30, 0.08), 0px 1px 5px -4px rgba(22, 26, 30, 0.08), 0px 0px 0px 1px rgba(22, 26, 30, 0.04), 0px 1px 0px 0px rgba(22, 26, 30, 0.02);
+    --shadows-shadow1: rgba(0, 0, 0, 0.01);
+    --shadows-shadow2: rgba(0, 0, 0, 0.02);
+    --shadows-shadow3: rgba(0, 0, 0, 0.03);
+    --shadows-shadow4: rgba(0, 0, 0, 0.04);
+    --shadows-shadow6: rgba(0, 0, 0, 0.06);
+    --shadows-shadow8: rgba(0, 0, 0, 0.08);
+    --shadows-shadow12: rgba(0, 0, 0, 0.12);
+    --shadows-shadow16: rgba(0, 0, 0, 0.16);
+    --shadows-surfaceZ1Light: 0px 1px 3px 1px rgba(22, 26, 30, 0.01), 0px 4px 8px -6px rgba(22, 26, 30, 0.08), 0px 1px 5px -4px rgba(22, 26, 30, 0.08), 0px 0px 0px 1px rgba(22, 26, 30, 0.04), 0px 1px 0px 0px rgba(22, 26, 30, 0.02);
+    --space-1: 1px;
+    --space-2: 6px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --sizes-xxs: 16px;
+    --sizes-xs: 24px;
+    --sizes-sm: 36px;
+    --sizes-md: 42px;
+    --sizes-lg: 56px;
+    --sizes-xl: 60px;
+    --sizes-xxl: 72px;
+    --fonts-default: 'Open Sans', sans-serif;
+    --fontSizes-1: 13px;
+    --fontSizes-2: 15px;
+    --fontSizes-3: 18px;
+    --fontWeights-1: 400;
+    --fontWeights-2: 600;
+    --lineHeights-1: 20px;
+    --lineHeights-2: 22px;
+    --lineHeights-3: 24px;
+    --radii-1: 8px;
+    --radii-2: 10px;
+    --radii-round: 50%;
+}
+
+/* Estilos específicos */
+.t-eTswqK {
+    --colors-primary: #3D2264;
+    --colors-darkPrimary: #3D2264;
+    --colors-fadedPrimary: #3D2264;
+}
+
+.c-gMpNkY {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border-radius: var(--radii-1);
+    font-family: var(--fonts-default);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+    position: relative;
+}
+
+.c-gMpNkY::after {
+    content: '❗';
+    font-size: 16px;
+    color: var(--colors-warn);
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: help;
+}
+
+.c-gMpNkY .tooltip {
+    content: 'Albacea: Persona encargada de cumplir las disposiciones expresadas en un testamento.';
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--colors-lightGrey);
+    color: var(--colors-black);
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: var(--fonts-default);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.c-gMpNkY:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.c-cejRVw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 var(--space-3) 0;
+    font-family: var(--fonts-default);
+    font-size: 0;
+    font-weight: 0;
+    line-height: 17px;
+    color: var(--colors-darkGrey);
+}
+
+.c-Mmsau > .c-bwlaNm,
+.c-Mmsau > .c-gSBsRr {
+    position: relative;
+    right: 10px;
+    left: auto;
+    max-width: 70%;
+    align-self: flex-end;
+    margin-left: 60px;
+}
+
+.c-Mmsau > .c-iBVlvN {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: var(--space-5);
+}
+
+.c-Mmsau > .c-iBVlvN button {
+    margin-left: var(--space-2);
+}
+
+.c-PJLV-gJqBfM-from-user {
+    position: relative;
+    right: 0;
+}
+
+.c-Mmsau > .c-bwlaNm .c-kIbiaN,
+.c-Mmsau > .c-gSBsRr .c-kIbiaN {
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.c-PJLV-gJqBfM-from-user + .c-kIbiaN {
+    position: relative;
+    left: -50px;
+    top: 0;
+}
+
+.vfrc-system-response--actions.c-iBVlvN {
+    transform: scaleX(-1);
+}
+
+.vfrc-system-response--actions.c-iBVlvN button {
+    transform: scaleX(1);
+}
+
+/* Estilos generales */
+h1.vfrc-header--title.c-kfyIxT {
+    color: var(--colors-black);
+}
+
+a {
+    color: var(--colors-blue);
+}
